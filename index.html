@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <h1>Totally Trivial Trivia</h1>
+  <form  id ="quiz" name = "quiz">
+
+
+    <p>What is the name of the Pirate in peter pan?</p>
+    <input id ="textbox" type ="text" name = "question1">
+
+    <p> Great whites and hammerheads are what type of animals?</p>
+    <input type = "radio" id ="mc" name = "question2" value = "Sharks">Sharks<br>
+    <input type = "radio" id ="mc" name = "question2" value = "Goldfish">Goldfish<br>
+
+<p>By What name are the young of Frogs and toads known?</p>
+<input type = "radio" id ="mc" name = "question3" value = "Xenopus">Xenopus<br>
+<input type = "radio" id ="mc" name = "question3" value = "Tadpoles"> Tadpoles<br>
+
+<p>How many rings make up the symbol of the Olympic Games?</p>
+<input type = "radio" id ="mc" name = "question4" value = "six"> Six<br>
+<input type = "radio" id ="mc" name = "question4" value = "five">Five
+<br>
+<p>How many legs does a spider have?</p>
+<input type = "radio" id ="mc" name = "question5" value = "nine"> Nine<br>
+<input type = "radio" id ="mc" name = "question5" value = "eight">Eight
+<br>
+
+<input id = "button" type="button" value = "I' am finished!" onclick = "check()">
+</form>
+
+<div id = "after_submit">
+<p id = "message"></p>
+<p id = "number_correct"></p>
+<img id = "picture">
+</div>
+
+<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+
+
+<script src="./assets/javascript/app.js"></script>
+</body>
+</html>
