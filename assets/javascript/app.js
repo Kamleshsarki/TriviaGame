@@ -1,3 +1,7 @@
+
+
+
+
 function check(){
 
     var question1 = document.quiz.question1.value;
@@ -51,3 +55,22 @@ document.getElementById("number_correct").innerHTML ="You got " + correct + " co
 document.getElementById("picture").src = pictures[range];
 
 }
+
+let time = 30
+let timer
+
+function lose() {
+    swal("Time Out!");
+}
+
+timer = setInterval(function() {
+    time--
+    if (time ===0) {
+        lose()
+        clearInterval(timer)
+    } else {
+        document.getElementById("timer").innerHTML = time
+        
+    }
+        
+}, 1000)
